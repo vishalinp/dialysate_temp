@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568214481054.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DCC8D711",
+    "lastKnownWriteTime" : 3185786791528969008,
+    "last_content_update" : 1568214481054,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "4FFC7101",
+        "caption" : "test_mut2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=test_mut2&cache_key=4FFC7101",
+        "displayedObservations" : 6,
+        "environment" : "",
+        "expression" : "test_mut2",
+        "object" : "test_mut2",
+        "preview" : 0,
+        "totalObservations" : 6,
+        "variables" : 5
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
