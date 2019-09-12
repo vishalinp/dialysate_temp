@@ -2,6 +2,7 @@
 
 library(dplyr)
 library(ggplot2)
+library(tidyr)
 
 #read data
 datafiles <- list.files('data')
@@ -23,9 +24,27 @@ for(i in 1:length(datafiles))
 }
 
 
+patients <- read.csv('data/patient_record.csv')
+
+time_name <- function(x)
+{
+  strsplit(x, '_')[[1]][1]
+}
+
+tidy_sys <- patients %>%
+  select(Patient.Number, Session, Temperature..C.., Hypertensive.Hypotensive, contains('_Systolic')) %>%
+  gather(key = 'Time', value = Systolic_BP, contains('_Systolic')) %>%
+  separate(Time, c('Time', 'garbage'), sep = '_') %>%
+  select(-garbage) %>%
+  mutate(Time = gsub('X', '', Time))
 
 
 
+
+
+
+
+### ----------------------------- OLD -------------------------------- ###
 
 test_data <- read.csv('test.csv')
 
